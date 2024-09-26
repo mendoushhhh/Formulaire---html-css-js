@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Karla'; /* Nom personnalisé pour la police */
+    src: url('./assets/fonts/static/Karla-Bold.ttf') format('truetype'); /* Chemin vers ton fichier .ttf */
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background:#e7e7e7;
+    color: whitesmoke;
+    font-family: 'Karla';
+}
+form {
+    margin-top: 20px;
+}
+#background {
+    background: rgb(255, 255, 255);
+    height: 700px;
+    max-width: 700px;
+    margin: 150px auto;
+    border-radius: 20px;
+    color:#414141;
+    padding: 30px 20px ;
+}
+.cote-a-cote {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 10px;
+}
+/* pour que le label aille au dessus de l'input, classe commune */
+.superpose {
+display: flex;
+flex-direction: column;
+gap: 5px;
+margin-bottom: 20px;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-evenly;
+
+
+}
+.buttons {
+
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.btn1, .btn2 {
+   border-radius: 10px;
+   
+   padding: 10px 30px; /* Réduire le padding horizontal */
+   border: 1px solid #928e8e;
+   flex: 1; /* Largeur égale */
+   border: 1px solid #928e8e;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
+    
+   
+}
+textarea {
+    resize: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    outline: none;
+    margin-top: 10px;
+}
+.height{
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+}
+   
+.contacted {
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+button {
+    width: 100%;
+    height: 50px;
+    font-family: 'Karla';
+    font-weight: 600;
+    background: rgb(3, 66, 32);
+    color: whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+button:hover {
+    background: rgb(2, 71, 34);
+}
+.contacted input[type="radio"] {
+    appearance: none; /* Supprime le style par défaut du bouton radio */
+    -webkit-appearance: none; /* Pour compatibilité avec Webkit (Chrome, Safari) */
+    -moz-appearance: none; /* Pour compatibilité avec Firefox */
+    width: 12px;
+    height: 12px;
+    border: 1px solid #007BFF; /* Bordure bleue */
+   
+    background-color: white;
+    cursor: pointer;
+}
+.contacted input[type="radio"]:checked {
+    background-color: #007BFF; /* Couleur de fond du bouton quand sélectionné */
+}
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(148, 148, 148);
+}
