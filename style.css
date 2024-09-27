@@ -84,6 +84,7 @@ textarea {
     margin-top: 10px;
     outline: none;
     margin-top: 10px;
+    padding: 10px;
 }
 .height{
     margin-top: 10px;
@@ -91,6 +92,7 @@ textarea {
     border-radius: 10px;
     outline: none;
     border: 1px solid grey;
+    padding: 10px;
 }
    
 .contacted {
@@ -132,4 +134,60 @@ button:hover {
     justify-content: center;
     align-items: center;
     color: rgb(148, 148, 148);
+}
+
+#success-message {
+
+        display: none; 
+        /* il est caché par défaut */
+        color: green; 
+        margin-top: 20px;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **************responsive***************** */
+
+
+@media (max-width: 375px) {
+    .cote-a-cote {
+        display: grid;
+        grid-template-columns: 1fr; /* Sur mobile, les éléments seront en colonne */
+        gap: 0px;
+    }
+    .container {
+        margin-bottom: 70px;
+    }
+    .buttons {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column; /* Les éléments s'empilent en colonne */
+        align-items: stretch; /* Assure que les éléments prennent toute la largeur disponible */
+        gap: 10px; /* Espace entre chaque élément */
+    }
+    
+     #background {
+            background: rgb(255, 255, 255);
+            height: 900px;
+            max-width: 700px;
+            margin: 150px auto;
+            border-radius: 20px;
+            color: #414141;
+            padding: 30px 20px;
+    }
+
+   
 }
